@@ -1,0 +1,88 @@
+------------------------------------------------------------------------
+Date Class 
+------------------------------------------------------------------------
+Date()								working 
+SetDay(int d)							working 
+SetMonth(int m)							working 
+SetYear(int y)							working
+GetDay() const							working 
+GetMonth() const						working 
+GetYear() const							working 
+ConvertMonth(int i, string &m)					working 
+ValidDate(const int d, const int m, const int y)		working
+
+------------------------------------------------------------------------
+Time Class
+------------------------------------------------------------------------
+Time()								working
+~Time()								working 
+SetHour(int h)							working 
+GetHour() const							working 
+SetMinute(int m)						working 
+GetMinute() const						working 
+
+------------------------------------------------------------------------
+WindTempSolarLog Class
+------------------------------------------------------------------------
+WindTempSolarLog()						working
+~WindTempSolarLog()						working 
+SetWindTempSolarLog(WindTempSolarLog w)				working 
+SetDate(Date d)							working 
+SetTime(Time t)							working 
+SetWindSpeed(float w)						working 
+SetSolarRadiation(float s)					working 
+SetTemperature(float t)						working 
+GetDate() const							working 
+GetTime() const							working 
+GetWindSpeed() const						working 
+GetSolarRadiation() const					working 
+GetTemperature() const						working 
+
+------------------------------------------------------------------------
+Bst Class
+------------------------------------------------------------------------
+Bst()								working
+~Bst()								working 
+Insert(const T newData)						working 
+Delete(const T item)						working
+InOrder()							working
+PreOrder()							working
+PostOrder()							working
+Search(const T &item)						working
+GetData(const T &item, T &store)				working
+Traversal(void(*funcPtr) (T &item)) const			working
+Insert(node* newNode, node* parent)				working
+Delete(node *&p)						working
+InOrder(node *p) const						working
+PreOrder(node *p) const						working
+PostOrder(node *p) const					working
+SearchTree(const T &item)					working
+Traversal(node *p, void(*funcPtr)(T &item)) const		working
+
+------------------------------------------------------------------------
+Application Class
+------------------------------------------------------------------------
+Application()							working 
+~Application() 							working 
+RunApp(Application &app, bool check)				working 
+AddToResult(string s)						working 
+GetResult(string &s) const 					working	 
+Menu() 								working 
+OpenFile(string infile. Application &app)			working
+InsertToMap(const string key, const WindTempSolarLog value)	working
+InsertToBst(const string key)					working
+GetOption() 							working 
+CalcAvgMonthWindSpeed(Application &app, int m, int y)		working
+CalcAvgMonthTemp(Application &app, int m, int y)		working
+CalcTotalMonthSolar(Application &app, int m, int y)		working 
+MonthInput()							working
+YearInput()							working
+Process(int choice, Application &app)				working 
+Option1(Application &app) 					working 
+Option2(Application &app) 					working 
+Option3(Application &app) 					working 
+Option4(Application &app) 					working 
+Option5(Application &app) 					working
+OutputResult(Application &app) 					working 
+ReadFile(string infile, Application &app) 			working
+DateInput(int &d, int &m, int &y)				working 
